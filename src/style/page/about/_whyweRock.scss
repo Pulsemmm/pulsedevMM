@@ -1,0 +1,127 @@
+.whyRockSection {
+  background-color: var(--white);
+  padding: 132px 171px 65px 185px;
+
+  .achievement-card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 27px;
+  }
+  .demoCard {
+    background-color: var(--black);
+    width: 100%;
+    height: 138.307px;
+    border-radius: 9.568px;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: all 1.5s linear;
+    h4 {
+      transition: all 1.5s ease-in-out;
+    }
+    p {
+      transition: all 1.5s ease-in-out;
+    }
+    &:hover,
+    &:focus {
+      h4,
+      p {
+        color: var(--black) !important;
+        transition: all 1.5s linear;
+      }
+    }
+    .circle-anim {
+      position: absolute;
+      border-radius: 50%;
+      background: var(--greenish-blue);
+      height: 230px;
+      width: 230px;
+      transition: all 1.5s ease-in-out;
+      z-index: -1;
+      top: 88%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &:hover,
+    &:focus {
+      .circle-anim {
+        background: var(--greenish-blue);
+        transform: scale(5);
+        transition: all 1.5s linear;
+      }
+    }
+  }
+  .maincontent-div {
+    p {
+      max-width: 993px;
+      padding: 131px 0px;
+    }
+  }
+}
+.rock-content {
+  padding: 0px 146px 127px 197px;
+  background: #fafafa;
+  p {
+    text-align: justify;
+  }
+  img {
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+  }
+}
+
+@media screen and (max-width: 1601px) {
+  .whyRockSection {
+    padding: 100px 80px 70px 100px;
+  }
+  .rock-content {
+    padding: 0px 90px 127px 90px;
+  }
+}
+
+@media screen and (max-width: 1401px) {
+  .whyRockSection {
+    padding: 70px 70px 70px 70px;
+    .maincontent-div p {
+      max-width: 993px;
+      padding: 70px 0px;
+    }
+  }
+  .rock-content {
+    padding: 0px 90px 80px 90px;
+    img {
+      max-width: 50%;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .whyRockSection {
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    .maincontent-div {
+      display: flex;
+      flex-direction: column-reverse !important;
+    }
+    .achievement-card-wrapper {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .maincontent-div {
+      p {
+        padding: 30px 0;
+        text-align: justify !important;
+      }
+      h2 {
+        font-size: 25px;
+      }
+    }
+  }
+  .rock-content {
+    flex-direction: column;
+    padding: 50px 20px;
+    img {
+      max-width: 100%;
+    }
+  }
+}

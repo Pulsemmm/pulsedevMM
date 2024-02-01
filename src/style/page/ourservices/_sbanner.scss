@@ -1,0 +1,59 @@
+.servicesBanner {
+  height: 100vh;
+  background: url(../../../assets/images/about/banner/banner-back.svg);
+  background-size: cover;
+  position: relative;
+  .banner-content {
+    position: relative;
+    z-index: 2;
+    margin-top: 100px;
+    .content-back {
+      position: absolute;
+      width: 436px;
+      height: 436px;
+      right: 27%;
+      border-radius: 436px;
+      opacity: 0.8;
+      background: #00cdac;
+      filter: blur(142px);
+      z-index: -1;
+    }
+    h2 {
+      max-width: 1029px;
+    }
+    p {
+      max-width: 950px;
+    }
+  }
+  .banner-video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 60%;
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .servicesBanner {
+    height: 80vh;
+    padding: 0 20px;
+    .banner-content {
+      gap: 20px;
+      h2 {
+        max-width: 100%;
+      }
+      p {
+        max-width: 100%;
+      }
+    }
+    .banner-video {
+      video {
+        // height: unset;
+      }
+    }
+  }
+}

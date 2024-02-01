@@ -1,0 +1,148 @@
+.product {
+  padding: 57px 0px;
+  h5 {
+    font-weight: 800;
+  }
+  .food {
+    margin-top: 57px;
+    gap: 10px;
+    display: grid !important;
+    grid-template-columns: repeat(5, 1fr);
+    .content {
+      // width: 309px;
+      // height: 391px;
+      padding: 13px 10px;
+      border-radius: 5.494px;
+      background: #fff;
+      box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.1);
+      position: relative;
+      z-index: 1;
+      transition: all 1s linear;
+      overflow: hidden;
+      &:hover {
+        &::after {
+          opacity: 1;
+          transition: all 0.4s linear;
+        }
+        transition: all 0.4s linear;
+        display: block;
+        .layers {
+          transition: all 0.4s ease-in-out;
+          transform: translate(-50%, -50%) rotate(20deg);
+          .shadow1,
+          .shadow2,
+          .shadow3 {
+            background: #00cdac;
+            transition: all 0.4s linear;
+          }
+        }
+        .food-image {
+          transition: all 0.4s linear;
+          .black-layer {
+            background: rgba(0, 0, 0, 0.4);
+            transition: all 0.4s linear;
+            width: 94%;
+          }
+        }
+      }
+      .food-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          position: relative;
+          z-index: 3;
+          width: 100%;
+          height: 100%;
+        }
+        .black-layer {
+          border-radius: 5.494px;
+          position: absolute;
+          z-index: 4;
+          width: 5%;
+          height: 94%;
+          top: 3%;
+          transition: all 0.4s linear;
+        }
+      }
+      .layers {
+        height: 500px;
+        z-index: 2;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: flex;
+        gap: 10px;
+        transform: translate(-50%, -50%) rotate(90deg);
+        transition: all 0.4s linear;
+        .shadow1 {
+          width: 18.639px;
+          height: 100%;
+          transition: all 0.4s linear;
+        }
+        .shadow2 {
+          width: 60.577px;
+          height: 100%;
+          transition: all 0.4s linear;
+        }
+        .shadow3 {
+          width: 18.639px;
+          height: 100%;
+          transition: all 0.4s linear;
+        }
+      }
+      &::after {
+        content: url("../../../assets/icons/Vector.png");
+        position: absolute;
+        z-index: 6;
+        top: 40%;
+        right: 40%;
+        opacity: 0;
+        transition: all 0.4s linear;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .product {
+    h5 {
+      font-size: 45px;
+    }
+    .food {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .product {
+    .food {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .product {
+    padding: 50px 20px;
+    h5 {
+      font-size: 25px;
+      line-height: 100%;
+    }
+    .food {
+      margin-top: 20px;
+      gap: 20px;
+      grid-template-columns: repeat(1, 1fr);
+      .content {
+        // max-width: 350px;
+        // max-height: 350px;
+        .food-image {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

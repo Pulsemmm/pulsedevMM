@@ -1,0 +1,208 @@
+.pulse-navbar {
+  padding: 0 100px;
+  position: absolute;
+  padding-top: 75px;
+  z-index: 99;
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    // background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 100%);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  ul {
+    border-radius: 11px;
+    border: 2px solid var(--greenish-blue);
+    background: var(--white);
+    backdrop-filter: blur(42px);
+    gap: 62px;
+    padding: 20px 100px;
+    li {
+      a {
+        font-size: 20px;
+        font-weight: 400;
+        color: var(--black);
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          width: 0%;
+          height: 3px;
+          background-color: var(--greenish-blue);
+          left: 0;
+          bottom: -6px;
+          transition: all 0.3s linear;
+        }
+
+        &.active,
+        &:hover {
+          &::after {
+            width: 100%;
+          }
+        }
+      }
+      .different {
+        font-size: 20px;
+        font-weight: 400;
+        color: var(--black);
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          width: 0%;
+          height: 3px;
+          background-color: var(--greenish-blue);
+          left: 0;
+          bottom: -6px;
+          transition: all 0.3s linear;
+        }
+
+        &.active,
+        &:hover {
+          &::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.services-dropdown {
+  position: absolute;
+  z-index: 12;
+  top: -350px;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%);
+  width: 450px;
+  background: white;
+  border-radius: 12px;
+  padding: 20px 20px 40px 20px;
+  display: flex;
+  justify-content: center;
+  transition: all 0.3s linear;
+  .dropdown-content {
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      li {
+        padding-top: 20px;
+        a {
+          color: black;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  &.open {
+    // top: 13% !important;
+    top: 155px !important;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .pulse-navbar ul {
+    gap: 40px;
+    padding: 15px 40px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .pulse-navbar {
+    padding: 0 60px;
+    padding-top: 38px;
+    a {
+      img {
+        width: 150px;
+      }
+    }
+    ul {
+      gap: 25px;
+      padding: 15px 25px;
+      li {
+        a {
+          font-size: 18px;
+        }
+      }
+    }
+    button {
+      min-width: 120px !important;
+      font-size: 16px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mobile-navbar {
+    position: absolute;
+    top: 0px;
+    z-index: 10;
+    background: black;
+    padding: 20px;
+    width: 100%;
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      .mobile-logo {
+        width: 140px;
+        cursor: pointer;
+      }
+    }
+
+    .mobile-sidebar {
+      padding: 20px;
+      position: fixed;
+      left: -110%;
+      top: 0;
+      z-index: 20;
+      background: black;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      transition: all 0.3s linear;
+      &.open {
+        left: 0;
+      }
+      .side-menu {
+        display: flex;
+        width: 30px;
+        height: 30px;
+        margin-left: auto;
+        margin-bottom: 30px;
+      }
+      .side-icons {
+        width: 100%;
+        ul {
+          display: flex;
+          flex-direction: column;
+          row-gap: 10px;
+          a {
+            font-size: 20px;
+            color: white;
+          }
+        }
+      }
+      .services-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        button {
+          background: transparent;
+        }
+      }
+      .services-bottom {
+        padding: 20px;
+      }
+    }
+  }
+}

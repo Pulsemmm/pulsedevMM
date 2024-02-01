@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  line-height: normal;
+}
+
+h2 {
+  font-size: 78.165px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 64.421px;
+  font-weight: 800;
+}
+h4 {
+  font-size: 60px;
+}
+h5 {
+  font-size: 50px;
+}
+
+h6 {
+  font-size: 45.524px;
+  font-weight: 800;
+}
+h6.medium-head {
+  font-size: 41.874px;
+  font-weight: 800;
+}
+
+.extra-body-large {
+  font-size: 33.913px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 30px;
+}
+label.small {
+  font-weight: 400;
+  font-size: 30px;
+}
+
+label.medium {
+  font-size: 31px;
+  font-weight: 800;
+}
+label.large {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 400;
+}
+p.small {
+  font-size: 14px;
+  font-weight: 400;
+}
+p.medium {
+  font-size: 16px;
+  font-weight: 600;
+}
+.body-medium {
+  font-size: 23px;
+  font-weight: 400;
+}
+.body-large {
+  font-size: 25px;
+}
+
+li {
+  a {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+
+.fw-bolder {
+  font-weight: 800 !important;
+}
+
+@media screen and (max-width: 1600px) {
+  p {
+    font-size: 16px;
+  }
+  .body-large {
+    font-size: 20px;
+  }
+  label {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  h4 {
+    font-size: 45px;
+  }
+  h5 {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  p {
+    font-size: 15px;
+  }
+  .body-large {
+    font-size: 20px;
+  }
+  label {
+    font-size: 17px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  h4 {
+    font-size: 40px;
+  }
+  h5 {
+    font-size: 30px;
+  }
+}
+
+.text-grey {
+  color: rgba(0, 0, 0, 0.4) !important;
+}

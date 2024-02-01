@@ -1,0 +1,488 @@
+.cards {
+  width: 100%;
+  gap: 90px;
+  padding: 128px 80px;
+  .left {
+    width: 50%;
+    .take-care {
+      width: 80%;
+      margin: 71px 0;
+    }
+    .social-media {
+      display: flex;
+      gap: 40px;
+      transition: all 0.4s linear;
+
+      p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 160px;
+        height: 48px;
+        border-radius: 7px;
+        border: 2px solid #000;
+        transition: all 0.4s linear;
+        position: relative;
+        z-index: 4;
+        color: #000;
+        &:hover {
+          color: #fff;
+          .black-layer {
+            width: 100%;
+            height: 100%;
+            transition: all 0.4s linear;
+            background: #000;
+          }
+        }
+        .black-layer {
+          width: 10px;
+          height: 10px;
+          position: absolute;
+          z-index: -1;
+          transition: all 0.4s linear;
+        }
+      }
+    }
+  }
+  .right {
+    width: 50%;
+    gap: 26px;
+    .div-1 {
+      display: flex;
+      flex-direction: column;
+      gap: 21px;
+      position: relative;
+      z-index: 6;
+      transition: all 0.4s linear;
+
+      &:hover {
+        .orange-layer {
+          height: 100% !important;
+          transition: all 0.4s linear;
+          position: absolute;
+          z-index: 2;
+        }
+        .top {
+          transition: all 0.4s linear;
+
+          p {
+            z-index: 4;
+            position: relative;
+            color: white;
+            transition: all 0.4s linear;
+          }
+        }
+        .audience {
+          transition: all 0.4s linear;
+
+          .top {
+            transition: all 0.4s linear;
+
+            h6,
+            h1 {
+              z-index: 4;
+              position: relative;
+              color: white;
+              transition: all 0.4s linear;
+            }
+          }
+        }
+      }
+      .without-audience {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: relative;
+        width: 261px;
+        height: 257.285px;
+        border-radius: 35px;
+        background: #fff;
+        box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.07);
+        transition: all 0.4s linear;
+
+        .top {
+          padding: 42px 30px;
+          transition: all 0.4s linear;
+
+          .orange-layer {
+            position: absolute;
+            transition: all 0.4s linear;
+
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 18%;
+            border-radius: 35px;
+            background: linear-gradient(90deg, #f96 0%, #ff5e62 100%);
+          }
+        }
+      }
+      .audience {
+        transition: all 0.4s linear;
+
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: relative;
+        width: 261px;
+        height: 257.285px;
+        border-radius: 35px;
+        background: #fff;
+        box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.07);
+        .top {
+          transition: all 0.4s linear;
+
+          padding: 42px 30px;
+          h1 {
+            color: #010101;
+            font-family: "Roboto";
+            font-size: 99.45px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            text-transform: uppercase;
+          }
+          .orange-layer {
+            transition: all 0.4s linear;
+
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 18%;
+            border-radius: 35px;
+            background: linear-gradient(90deg, #f96 0%, #ff5e62 100%);
+          }
+        }
+      }
+    }
+    .div-2 {
+      display: flex;
+      flex-direction: column;
+      gap: 21px;
+      transition: all 0.4s linear;
+      &:hover {
+        .green-layer {
+          height: 100% !important;
+          transition: all 0.4s linear;
+        }
+        .top {
+          transition: all 0.4s linear;
+
+          p {
+            z-index: 4;
+            position: relative;
+            color: white;
+            transition: all 0.4s linear;
+          }
+        }
+        .audience {
+          transition: all 0.4s linear;
+
+          .top {
+            transition: all 0.4s linear;
+
+            h6,
+            h1 {
+              z-index: 4;
+              position: relative;
+              color: white;
+              transition: all 0.4s linear;
+            }
+          }
+        }
+      }
+      .without-audience {
+        transition: all 0.4s linear;
+
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: relative;
+        width: 261px;
+        height: 257.285px;
+        border-radius: 35px;
+        background: #fff;
+        box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.07);
+        .top {
+          transition: all 0.4s linear;
+
+          padding: 42px 30px;
+          .green-layer {
+            transition: all 0.4s linear;
+
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 18%;
+            border-radius: 35px;
+            background: linear-gradient(90deg, #00f5a0 0%, #00d9f5 100%);
+            transition: all 0.4s linear;
+          }
+        }
+      }
+      .audience {
+        transition: all 0.4s linear;
+
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: relative;
+        width: 261px;
+        height: 257.285px;
+        border-radius: 35px;
+        background: #fff;
+        box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.07);
+        .top {
+          transition: all 0.4s linear;
+
+          padding: 42px 30px;
+          h1 {
+            color: #010101;
+            font-family: "Roboto";
+            font-size: 99.45px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            text-transform: uppercase;
+            transition: all 0.4s linear;
+          }
+          .green-layer {
+            position: absolute;
+            transition: all 0.4s linear;
+
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 18%;
+            border-radius: 35px;
+            background: linear-gradient(90deg, #00f5a0 0%, #00d9f5 100%);
+          }
+        }
+      }
+    }
+    .div-3 {
+      display: flex;
+      flex-direction: column;
+      transition: all 0.4s linear;
+      gap: 21px;
+      &:hover {
+        .purple-layer {
+          height: 100% !important;
+          transition: all 0.4s linear;
+        }
+        .top {
+          transition: all 0.4s linear;
+          p {
+            z-index: 4;
+            position: relative;
+            color: white;
+            transition: all 0.4s linear;
+          }
+        }
+        .audience {
+          transition: all 0.4s linear;
+          .top {
+            h6,
+            h1 {
+              transition: all 0.4s linear;
+              z-index: 4;
+              position: relative;
+              color: white;
+            }
+          }
+        }
+      }
+      .without-audience {
+        transition: all 0.4s linear;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: relative;
+        width: 261px;
+        height: 257.285px;
+        border-radius: 35px;
+        background: #fff;
+        box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.07);
+        .top {
+          transition: all 0.4s linear;
+          padding: 42px 30px;
+          .purple-layer {
+            position: absolute;
+            transition: all 0.4s linear;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 18%;
+            border-radius: 35px;
+            background: linear-gradient(90deg, #da22ff 0%, #9733ee 100%);
+          }
+        }
+      }
+      .audience {
+        transition: all 0.4s linear;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: relative;
+        width: 261px;
+        height: 257.285px;
+        border-radius: 35px;
+        background: #fff;
+        box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.07);
+        .top {
+          padding: 42px 30px;
+          transition: all 0.4s linear;
+          h1 {
+            color: #010101;
+            transition: all 0.4s linear;
+            font-family: "Roboto";
+            font-size: 99.45px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            text-transform: uppercase;
+          }
+          .purple-layer {
+            transition: all 0.4s linear;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 18%;
+            border-radius: 35px;
+            background: linear-gradient(90deg, #da22ff 0%, #9733ee 100%);
+          }
+        }
+      }
+    }
+    // .div-1,
+    // .div-2 {
+    //   border-right: 4px dashed black;
+    //   padding-right: 20px;
+    //   border-bottom: 4px dashed black;
+    // }
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .cards {
+    align-items: center;
+    gap: 70px;
+    padding: 100px 60px;
+
+    .left {
+      h2 {
+        font-size: 60px;
+      }
+    }
+    .right {
+      .market-status-card {
+        padding: 0;
+        .market-status-card-content {
+          width: 210px;
+          height: 200px;
+          .top {
+            padding: 0 20px;
+          }
+          p {
+            text-align: center;
+          }
+          h1 {
+            font-size: 50px !important;
+            text-align: center;
+          }
+          h6 {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1500px) {
+  .cards {
+    gap: 90px;
+    padding: 60px 60px;
+    .left {
+      h2 {
+        font-size: 55px;
+      }
+    }
+    .right {
+      flex-direction: column;
+      .market-status-card {
+        flex-direction: row;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        .market-status-card-content {
+          width: 210px;
+          height: 200px;
+          .top {
+            padding: 0 20px;
+          }
+          p {
+            text-align: center;
+          }
+          h1 {
+            font-size: 50px !important;
+            text-align: center;
+          }
+          h6 {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .cards {
+    gap: 20px;
+    padding: 60px 35px;
+    .left {
+      h2 {
+        font-size: 50px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cards {
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 0 !important;
+    .left {
+      width: 100%;
+      h2 {
+        font-size: 30px;
+        text-align: center;
+      }
+      .take-care {
+        width: 100%;
+        margin: 30px 0;
+        text-align: center;
+      }
+      .social-media {
+        gap: 10px;
+      }
+    }
+    .right {
+      width: 100%;
+      .market-status-card {
+        .market-status-card-content {
+          height: 220px;
+          .top {
+            padding: 0 15px;
+          }
+        }
+      }
+    }
+  }
+}

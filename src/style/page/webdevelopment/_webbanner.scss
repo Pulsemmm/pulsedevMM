@@ -1,0 +1,51 @@
+.web-banner {
+  background-image: url("../../../assets/images/Web-development/web-banner.png");
+  background-size: cover;
+  height: 100vh;
+  h1 {
+    color: #fff;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 192.357px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  h5 {
+    color: #fff;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .banner-responsive {
+    h1 {
+      font-size: 10vw !important;
+      line-height: 100% !important;
+    }
+    h5 {
+      font-size: 2.6vw !important;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .banner-responsive {
+    height: 80vh !important;
+    padding: 0px 20px !important;
+    background-size: cover !important;
+    background-position: center !important;
+    h1 {
+      font-size: 10vw !important;
+      line-height: 100% !important;
+    }
+    h5 {
+      font-size: 4vw !important;
+    }
+  }
+}

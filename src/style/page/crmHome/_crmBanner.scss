@@ -1,0 +1,117 @@
+.crmBanner {
+  position: relative;
+  height: 100vh;
+  .banner-video {
+    &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      opacity: 0.3;
+      background: #000;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+    }
+    video {
+      position: relative;
+      z-index: 1;
+      object-fit: cover;
+    }
+  }
+  .banner-content {
+    position: absolute;
+    z-index: 5;
+    h1 {
+      width: 1162px;
+      z-index: 5;
+      color: #fff;
+      text-align: center;
+      font-family: "Roboto";
+      font-size: 56px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 73px; /* 130.357% */
+      text-transform: uppercase;
+    }
+    p {
+      z-index: 5;
+      margin-top: 30px;
+      width: 1142px;
+      color: #fff;
+      text-align: center;
+      font-family: Roboto;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.28px;
+    }
+    button {
+      margin-top: 79px;
+      border-radius: 4px;
+      background: linear-gradient(90deg, #02aab0 0%, #00cdac 100%);
+      box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+      padding: 9px 26px;
+      color: #fff;
+      font-family: Roboto;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+    .trial {
+      //   margin-top: 24px;
+      color: #fff;
+      font-family: Poppins;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 26px; /* 173.333% */
+      letter-spacing: 0.15px;
+      opacity: 0.6;
+    }
+  }
+}
+
+// Media queries
+@media screen and (max-width: 1250px) {
+  .crmBanner {
+    .banner-content {
+      h1 {
+        width: 850px;
+        font-size: 40px;
+        line-height: 60px;
+      }
+      p {
+        width: 800px;
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .crmBanner {
+    height: 100vh;
+    .banner-video {
+      width: 100%;
+      height: 100%;
+    }
+    .banner-content {
+      padding: 0 20px;
+      h1 {
+        width: 100%;
+        font-size: 27px;
+        line-height: 40px;
+      }
+      p {
+        width: 100%;
+        font-size: 18px;
+      }
+      button {
+        margin-top: 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,129 @@
+.h-banner {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  .banner-content-wrapper {
+    padding: 0 300px;
+    .banner-content {
+      display: flex;
+      // align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      h1 {
+        font-size: 243.666px;
+        text-transform: uppercase;
+        img {
+          width: 50%;
+        }
+      }
+      p {
+        width: 50%;
+      }
+    }
+
+    .pulse-video {
+      width: 588px;
+      height: 330.75px;
+      position: absolute;
+      right: 0px;
+      bottom: 70px;
+      video {
+        mix-blend-mode: difference;
+      }
+    }
+    .background-video {
+      position: absolute;
+      // top: 0;
+      // left: 0;
+      // right: 0;
+      // bottom: 0;
+      inset: 0;
+      z-index: -1;
+      video {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .h-banner .banner-content-wrapper {
+    padding: 0 140px;
+    .banner-content {
+      h1 {
+        font-size: 173.666px;
+        margin-left: -15px;
+      }
+      h2 {
+        font-size: 60px;
+      }
+    }
+    .pulse-video {
+      width: 480px;
+      height: 300.75px;
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .h-banner .banner-content-wrapper {
+    padding: 0 100px;
+    .banner-content {
+      padding-top: 80px;
+      h1 {
+        font-size: 140px;
+        margin-left: -10px;
+        line-height: 100%;
+      }
+      h2 {
+        font-size: 50px;
+        line-height: 100%;
+      }
+    }
+    .pulse-video {
+      width: 480px;
+      height: 300.75px;
+      bottom: -70px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .h-banner {
+    height: 90vh;
+    // padding: 0 20px;
+    .banner-content-wrapper {
+      padding: 0 20px;
+      .banner-content {
+        padding-left: 0px;
+        padding-top: 0;
+        display: flex;
+        // align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        h2 {
+          font-size: 30px;
+        }
+        h1 {
+          font-size: 50px;
+          margin: 0;
+          img {
+            width: 100%;
+          }
+        }
+        p {
+          max-width: 100%;
+          margin-top: 20px;
+          width: 100%;
+          font-size: 13px;
+        }
+      }
+      .pulse-video {
+        bottom: -30px;
+      }
+    }
+  }
+}

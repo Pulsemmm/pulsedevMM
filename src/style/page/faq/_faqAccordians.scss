@@ -1,0 +1,174 @@
+.faq-accordians {
+  padding: 167px 100px 0px 100px;
+  gap: 44px;
+  .top {
+    width: 100%;
+    max-width: 1242px;
+    padding: 36px;
+    border-radius: 18px;
+    background: var(--Neutral-100, #fff);
+    box-shadow: 0px 12px 24px 0px rgba(20, 20, 43, 0.04),
+      0px -2px 4px 0px rgba(20, 20, 43, 0.02),
+      0px 3px 14px 0px rgba(74, 58, 255, 0.03);
+    h3 {
+      color: var(--Neutral-800, #170f49);
+      font-feature-settings: "clig" off, "liga" off;
+
+      /* Headings/Typography Size 3 */
+      //   font-family: DM Sans;/
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 35px; /* 145.833% */
+    }
+  }
+  .bottom {
+    max-width: 1242px;
+    width: 100%;
+    border-radius: 20px;
+    background: var(--Neutral-200, #f7f7fb);
+    padding: 122px 172px;
+    .accordion {
+      max-width: 896px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+      .accordion-item {
+        width: 100%;
+        padding: 51px 38px;
+        border-radius: 18px;
+        background: var(--Neutral-100, #fff);
+        box-shadow: 0px 5px 16px 0px rgba(8, 15, 52, 0.06);
+        border: none;
+        .accordion-header {
+          .accordion-button {
+            background: transparent !important;
+            color: #000;
+            font-feature-settings: "clig" off, "liga" off;
+            font-family: "Roboto";
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 28px; /* 127.273% */
+            box-shadow: none;
+            &::after {
+              background-image: url("../../../assets/images/faq/arrow.webp");
+              width: 50px;
+              height: 50px;
+              background-size: cover;
+            }
+          }
+
+          .accordion-button:not(.collapsed)::after {
+            background-image: url("../../../assets/images/faq/arrow2.webp");
+            width: 50px;
+            height: 50px;
+            background-size: cover;
+            border-radius: 100%;
+            transform: rotate(360deg);
+            box-shadow: 0px 5px 16px 0px rgba(8, 15, 52, 0.06);
+          }
+        }
+        .accordion-collapse {
+          max-width: 715.296px;
+          width: 100%;
+          color: var(--Neutral-600, #6f6c90);
+          font-family: Roboto;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 120%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .faq-accordians {
+    padding: 80px 100px;
+    gap: 40px;
+    .top {
+      padding: 30px;
+      h3 {
+        font-size: 22px;
+        line-height: 100%;
+      }
+    }
+    .bottom {
+      padding: 80px 100px;
+      .accordion {
+        row-gap: 20px;
+        .accordion-item {
+          padding: 30px 20px;
+          .accordion-header {
+            .accordion-button {
+              font-size: 20px;
+              line-height: 120%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .faq-accordians {
+    padding: 60px 80px;
+    gap: 30px;
+    .top {
+      padding: 25px;
+      h3 {
+        font-size: 20px;
+      }
+    }
+    .bottom {
+      max-width: 1242px;
+      width: 100%;
+      border-radius: 20px;
+      background: var(--Neutral-200, #f7f7fb);
+      padding: 60px 80px;
+      .accordion {
+        row-gap: 20px;
+        .accordion-item {
+          padding: 20px 15px;
+          border: none;
+          .accordion-header {
+            .accordion-button {
+              font-size: 18px;
+              line-height: 100%;
+            }
+          }
+          .accordion-body {
+            max-width: 600px;
+            padding: 0px 20px;
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .faq-accordians {
+    padding: 50px 20px;
+    .bottom {
+      padding: 20px;
+      .accordion {
+        .accordion-item {
+          .accordion-header {
+            .accordion-button {
+              padding: 0px !important;
+              font-size: 16px;
+            }
+          }
+          .accordion-body {
+            padding: 20px 10px;
+          }
+        }
+      }
+    }
+  }
+}

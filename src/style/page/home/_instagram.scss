@@ -1,0 +1,39 @@
+.instagram {
+  .heading {
+    padding: 120px 0px;
+  }
+  .laws {
+    padding-bottom: 120px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    img {
+      object-fit: cover;
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .instagram {
+    .heading {
+      padding: 60px 0px;
+    }
+    .laws {
+      padding-bottom: 60px;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .instagram {
+    .heading {
+      padding: 50px 20px;
+      padding-bottom: 30px;
+      h2 {
+        font-size: 25px;
+      }
+    }
+    .laws {
+      padding-bottom: 0px;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

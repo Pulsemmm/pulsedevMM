@@ -1,0 +1,69 @@
+.contactbanner {
+  min-height: 100vh;
+  background-image: url("../../../assets/images/Contact-us/contact-banner.webp");
+  background-size: cover;
+  padding: 150px 0;
+  .content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    p {
+      width: 781px;
+      text-align: center;
+      margin-top: 37px;
+    }
+    .three-button {
+      margin-top: 91px;
+      gap: 48px;
+      button {
+        color: #fff;
+        padding: 19px 79px;
+        background: transparent;
+        border-radius: 34.5px;
+        border: 2px solid #00cdac;
+        &:hover {
+          border: 2px solid #fff;
+          color: #00cdac;
+        }
+      }
+    }
+  }
+}
+// Media Queries
+@media screen and (max-width: 1600px) {
+  .contactbanner {
+    .content {
+      p {
+        width: 680px;
+      }
+      .three-button {
+        margin-top: 50px;
+        gap: 30px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .contactbanner {
+    min-height: 80vh;
+    padding: 50px 20px;
+    .content {
+      width: 100%;
+      h2 {
+        font-size: 25px;
+      }
+      p {
+        margin-top: 20px;
+        width: 100%;
+      }
+      .three-button {
+        margin-top: 30px;
+        button {
+          padding: 19px 50px;
+        }
+      }
+    }
+  }
+}

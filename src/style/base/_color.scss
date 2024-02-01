@@ -1,0 +1,11 @@
+:root {
+  --black: #000;
+  --white: #fff;
+  --greenish-blue: #00cdac;
+}
+
+// color classes
+
+.text-greenish-blue {
+  color: var(--greenish-blue);
+}

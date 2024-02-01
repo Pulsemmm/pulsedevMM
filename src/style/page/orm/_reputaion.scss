@@ -1,0 +1,195 @@
+.reputation {
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 60px;
+  .top {
+    gap: 26px;
+    h5 {
+      color: #0c0c0c;
+      text-align: center;
+      font-family: "Roboto";
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+    p {
+      color: #000;
+    }
+  }
+  .bottom {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1420px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+    .repu-card {
+      border-radius: 10px;
+      border: 2px solid #000;
+      background: #fff;
+      box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.1);
+      padding: 50px 43px;
+      max-width: 323px;
+      height: 312px;
+      width: 100%;
+      overflow: hidden;
+      transition: all 0.5s linear;
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 20px;
+      }
+      p {
+        color: #000;
+        text-align: center;
+        font-family: "Roboto";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        transform: translateY(70%);
+        transition: all 0.5s linear;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        max-width: 190px;
+        max-height: 190px;
+        transition: all 0.5s linear;
+        margin: auto;
+      }
+
+      &:hover {
+        background: #ebfffc;
+        transition: all 0.5s linear;
+
+        p {
+          transform: translateY(0px);
+          transition: all 0.5s linear;
+        }
+        img {
+          width: 45.4110526316%;
+          height: 45.4110526316%;
+          transition: all 0.5s linear;
+        }
+      }
+    }
+  }
+  .consultant {
+    width: 100%;
+    margin-top: 66px;
+    button {
+      font-size: 19px;
+      font-weight: 500;
+      color: #fff;
+      padding: 18px 41px;
+      border-radius: 6.038px;
+      background: #000;
+      box-shadow: 0px 0px 16.908px 0px rgba(0, 0, 0, 0.12);
+      transition: all 0.6s linear;
+
+      &:hover {
+        background: #00cdac;
+        color: #000;
+        transition: all 0.6s linear;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .reputation {
+    padding: 80px 100px;
+    row-gap: 40px;
+    .top {
+      gap: 20px;
+      h5 {
+        font-size: 3vw;
+        line-height: 120%;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+    .bottom {
+      column-gap: 20px;
+      .repu-card {
+        padding: 30px 20px;
+        height: 250px;
+        div {
+          row-gap: 10px;
+        }
+        p {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .reputation {
+    padding: 60px 80px;
+    row-gap: 30px;
+    .top {
+      gap: 10px;
+    }
+    .bottom {
+      column-gap: 15px;
+      .repu-card {
+        padding: 20px;
+        height: 205px;
+        width: 205px;
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .reputation {
+    padding: 0px 20px;
+
+    row-gap: 20px;
+    .top {
+      gap: 10px;
+      h5 {
+        font-size: 25px;
+        line-height: 100%;
+      }
+      p {
+        text-align: center;
+      }
+    }
+    .bottom {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      max-width: unset;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      width: 100%;
+      .repu-card {
+        margin: 0px auto;
+        padding: 50px 30px;
+        max-width: 350px;
+        height: 300px;
+        width: 100%;
+
+        p {
+          font-size: 15px;
+          transform: translateY(100%);
+        }
+      }
+    }
+  }
+}

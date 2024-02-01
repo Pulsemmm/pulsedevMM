@@ -1,0 +1,143 @@
+.information {
+  padding: 63px 50px;
+  .content {
+    width: 1532px;
+    padding: 46px;
+    // background: red;
+    border-radius: 26.968px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background: #f8f8f8;
+    .personal-info {
+      border: 2px dashed #d9d9d9;
+      padding: 56px 38px;
+      border-radius: 26.968px;
+      background: #f8f8f8;
+      position: relative;
+      h6 {
+        top: -7%;
+        left: 26%;
+        padding: 0 30px;
+        background: #f8f8f8;
+        position: absolute;
+        color: #000;
+        font-family: Roboto;
+        font-size: 21.574px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+      .details-parent {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+        .details {
+          width: 445.581px;
+          min-height: 115.063px;
+          border-radius: 8.989px;
+          background: #fff;
+          padding: 12px 0px 12px 12px;
+          p {
+            color: #000;
+            font-family: Roboto;
+            font-size: 16.181px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+          input {
+            border-top: 0.899px solid #d9d9d9 !important;
+            border: none;
+            width: 100%;
+            margin-top: 7px;
+            padding: 20px 10px;
+            &::placeholder {
+              margin-top: 10px;
+              color: #d9d9d9;
+              font-family: Roboto;
+              font-size: 16.181px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .information {
+    .content {
+      width: 1300px;
+      .personal-info {
+        .details-parent {
+          .details {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1400px) {
+  .information {
+    .content {
+      width: 1100px;
+      .personal-info {
+        .details-parent {
+          .details {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .information {
+    .content {
+      width: 980px;
+      .personal-info {
+        .details-parent {
+          .details {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .information {
+    padding: 50px 10px;
+    .content {
+      padding: 20px 10px;
+      width: 100%;
+      .personal-info {
+        padding: 20px 10px;
+        h6 {
+          font-size: 16px;
+          top: -3%;
+          left: 13%;
+        }
+        .details-parent {
+          grid-template-columns: repeat(1, 1fr);
+          .details {
+            width: 100%;
+            p {
+              font-size: 14px;
+            }
+            input {
+              font-size: 14px;
+              &::placeholder {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

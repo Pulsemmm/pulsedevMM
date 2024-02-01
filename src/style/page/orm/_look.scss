@@ -1,0 +1,308 @@
+.look {
+  padding: 129px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .top {
+    margin-bottom: 140px;
+    gap: 26px;
+    max-width: 931px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    p {
+      text-align: center;
+      color: #000;
+    }
+    h5 {
+      font-weight: 800;
+    }
+  }
+  .bottom {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    max-width: 1360px;
+    .parent {
+      padding: 13px;
+      position: relative;
+      z-index: 1;
+      transition: all 1s linear;
+      overflow: hidden;
+      height: 370px;
+      border-radius: 5.494px;
+      background: #fff;
+      box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.1);
+      &:hover {
+        .layers {
+          .layer1,
+          .layer2,
+          .layer3 {
+            background: #00cdac;
+            transition: all 0.4s linear;
+          }
+        }
+      }
+      .look-cards {
+        position: relative;
+        z-index: 4;
+        height: 100%;
+        border-radius: 5.494px;
+        background: #000;
+        box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.1);
+        padding: 0px 25px;
+        &:hover {
+          background-color: white;
+          transition: all 0.4s linear;
+          h3 {
+            transition: all 0.4s linear;
+            transform: translateY(0px);
+            color: #000;
+          }
+          .for-para {
+            p {
+              transition: all 0.4s linear;
+              transform: translateY(0%);
+            }
+          }
+        }
+        h3 {
+          width: 100%;
+          color: #d9d9d9;
+          text-align: center;
+          font-family: "Roboto";
+          font-size: 27.841px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          text-transform: uppercase;
+          padding-bottom: 40px;
+          border-bottom: 4px solid #00cdac;
+          transition: all 0.4s linear;
+          transform: translateY(74px);
+        }
+        .for-para {
+          margin-top: 40px;
+          color: black;
+          p {
+            text-align: center;
+            transition: all 0.4s linear;
+            z-index: 1;
+            transform: translateY(250%);
+          }
+        }
+      }
+      .layers {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        position: absolute;
+        z-index: 2;
+        top: -30%;
+        left: 30%;
+        transform: rotate(120deg);
+        height: 600px;
+        .layer1 {
+          width: 18px;
+          height: 100%;
+          background: #fff;
+          transition: all 0.4s linear;
+        }
+        .layer2 {
+          width: 60px;
+          height: 100%;
+          background: #fff;
+          transition: all 0.4s linear;
+        }
+        .layer3 {
+          width: 18px;
+          height: 100%;
+          background: #fff;
+          transition: all 0.4s linear;
+        }
+      }
+    }
+  }
+  .consultant {
+    width: 100%;
+    margin-top: 66px;
+    button {
+      font-size: 19px;
+      font-weight: 500;
+      color: #fff;
+      padding: 18px 41px;
+      border-radius: 6.038px;
+      background: #000;
+      box-shadow: 0px 0px 16.908px 0px rgba(0, 0, 0, 0.12);
+      transition: all 0.6s linear;
+
+      &:hover {
+        background: #00cdac;
+        color: #000;
+        transition: all 0.6s linear;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .look {
+    padding: 80px 100px;
+    .top {
+      margin-bottom: 80px;
+      gap: 20px;
+      p {
+        font-size: 17px;
+      }
+    }
+    .bottom {
+      gap: 30px;
+      .parent {
+        padding: 13px;
+        height: 330px;
+        .look-cards {
+          padding: 0px 20px;
+          &:hover {
+            background-color: white;
+            transition: all 0.4s linear;
+            h3 {
+              transition: all 0.4s linear;
+              transform: translateY(0px);
+              color: #000;
+            }
+            .for-para {
+              p {
+                transform: translateY(0%);
+                transition: all 0.4s linear;
+              }
+            }
+          }
+          h3 {
+            font-size: 22px;
+            line-height: 120%;
+            padding-bottom: 20px;
+            transform: translateY(50px);
+          }
+          .for-para {
+            margin-top: 20px;
+            color: black;
+            p {
+              transform: translateY(270%);
+            }
+          }
+        }
+        .layers {
+          top: -40%;
+          transform: rotate(115deg);
+        }
+      }
+    }
+    .consultant {
+      margin-top: 50px;
+      button {
+        font-size: 17px;
+        padding: 15px 35px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .look {
+    padding: 60px 80px;
+    .top {
+      margin-bottom: 50px;
+      gap: 10px;
+    }
+    .bottom {
+      gap: 20px;
+      .parent {
+        padding: 10px;
+        height: 280px;
+        .look-cards {
+          padding: 0px 20px;
+          h3 {
+            font-size: 20px;
+            line-height: 110%;
+            padding-bottom: 15px;
+            transform: translateY(50px);
+          }
+          .for-para {
+            margin-top: 15px;
+            p {
+              padding: 0px;
+              transform: translateY(240%);
+            }
+          }
+        }
+        .layers {
+          top: -52%;
+        }
+      }
+    }
+    .consultant {
+      margin-top: 40px;
+      button {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .look {
+    padding: 50px 20px;
+    .top {
+      margin-bottom: 20px;
+      gap: 10px;
+      h5 {
+        font-size: 25px;
+        text-align: center;
+      }
+      p {
+        font-size: 15px;
+      }
+    }
+    .bottom {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+      max-width: 1360px;
+      .parent {
+        max-width: 350px;
+        width: 100%;
+        height: 300px;
+
+        .look-cards {
+          h3 {
+            font-size: 20px;
+            line-height: 110%;
+            transform: translateY(30px);
+          }
+          .for-para {
+            p {
+              transform: translateY(350%);
+            }
+          }
+        }
+        .layers {
+          gap: 10px;
+          top: -35%;
+          left: 30%;
+          transform: rotate(110deg);
+          height: 500px;
+        }
+      }
+    }
+    .consultant {
+      margin-top: 30px;
+      button {
+        font-size: 16px;
+        padding: 10px 30px;
+      }
+    }
+  }
+}

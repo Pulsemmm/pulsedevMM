@@ -1,0 +1,39 @@
+.boarding-banner {
+  height: 100vh;
+  position: relative;
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  h5 {
+    padding: 0 50px;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 73px; /* 130.357% */
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .boarding-banner {
+    h5 {
+      font-size: 45px;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .boarding-banner {
+    height: 80vh;
+    h5 {
+      padding: 0 20px;
+      font-size: 30px;
+      line-height: 50px;
+    }
+  }
+}

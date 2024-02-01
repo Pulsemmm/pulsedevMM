@@ -1,0 +1,142 @@
+// preset
+@import url("./base/_color.scss");
+@import url("./base/_reset.scss");
+@import url("./base/_typography.scss");
+@import url("./base/_mixins.scss");
+@import url("./components/_button.scss");
+@import url("./components/_input.scss");
+@import url("./components/_paginate.scss");
+@import url("./_global.scss");
+@import url("./layout/_header.scss");
+@import url("./layout/_footer.scss");
+
+// Home page
+@import url("./page/home/_banner.scss");
+@import url("./page/home/_about.scss");
+@import url("./page/home/_video.scss");
+@import url("./page/home/_slider.scss");
+@import url("./page/home/_featured.scss");
+@import url("./page/home/_ourClient.scss");
+@import url("./page/home/_whyChoose.scss");
+@import url("./page/home/_cards.scss");
+@import url("./page/home/_teamWork.scss");
+@import url("./page/home/_join.scss");
+@import url("./page/home/_services.scss");
+@import url("./page/home/_instagram.scss");
+@import url("./page/home/_featureWork.scss");
+
+// @import url("./page/home/_slider2.scss");
+
+// About page
+@import url("./page/about/_banner.scss");
+@import url("./page/about/_whyweRock.scss");
+@import url("./page/about/_team.scss");
+@import url("./page/about/_workwithus.scss");
+
+// OurServices page
+@import url("./page/ourservices/_sbanner.scss");
+@import url("./page/ourservices/_services.scss");
+@import url("./page/ourservices/_marketingservices.scss");
+
+// Portfolio page
+@import url("./page/portfolio/_portfoliobanner.scss");
+@import url("./page/portfolio/_showcase.scss");
+@import url("./page/portfolio/_successstories.scss");
+@import url("./page/portfolio/_teamspirit.scss");
+
+// Content creator page
+@import url("./page/contentCreator/_banner.scss");
+@import url("./page/contentCreator/_photoAndvideo.scss");
+@import url("./page/contentCreator/_portfolio.scss");
+@import url("./page/contentCreator/_product.scss");
+@import url("./page/contentCreator/_restaurant.scss");
+@import url("./page/contentCreator/_productVideo.scss");
+@import url("./page/contentCreator/_ads.scss");
+
+// Web development page
+@import url("./page/webdevelopment/_webbanner.scss");
+@import url("./page/webdevelopment/_web.scss");
+
+// Logo design page
+@import url("./page/logoDesign/_logobanner.scss");
+@import url("./page/logoDesign/_logo.scss");
+@import url("./page/logoDesign/_logos.scss");
+@import url("./page/logoDesign/_branding.scss");
+@import url("./page/logoDesign/_brandPricing.scss");
+
+// Contact us page
+@import url("./page/contactUs/_contactbanner.scss");
+@import url("./page/contactUs/_contactinfo.scss");
+@import url("./page/contactUs/_map.scss");
+@import url("./page/contactUs/_calender.scss");
+
+// App development page
+@import url("./page/appDevelopment/_appbanner.scss");
+@import url("./page/appDevelopment/_appDevel.scss");
+@import url("./page/appDevelopment/_ios.scss");
+@import url("./page/appDevelopment/_offerings.scss");
+@import url("./page/appDevelopment/_friendly.scss");
+@import url("./page/appDevelopment/_applications.scss");
+
+// ORM pages
+@import url("./page/orm/_ormBanner.scss");
+@import url("./page/orm/_ormCustomer.scss");
+@import url("./page/orm/_reputaion.scss");
+@import url("./page/orm/_look.scss");
+
+// SEO pages
+@import url("./page/seo/_seoBanner.scss");
+@import url("./page/seo/_seoServices.scss");
+@import url("./page/seo/_plan.scss");
+@import url("./page/seo/_results.scss");
+@import url("./page/seo/_reasons.scss");
+@import url("./page/seo/_seoPricing.scss");
+
+// Faq pages
+@import url("./page/faq/_faqBanner.scss");
+@import url("./page/faq/_faqAccordians.scss");
+
+// CRM home Page
+
+@import url("./page/crmHome/_crmBanner.scss");
+@import url("./page/crmHome/_automatedSystem.scss");
+@import url("./page/crmHome/_pricing.scss");
+@import url("./page/crmHome/_meeting.scss");
+@import url("./page/crmHome/_partner.scss");
+@import url("./page/crmHome/_army.scss");
+@import url("./page/crmHome/_crmFooter.scss");
+
+// Check out page
+@import url("./page/checkOut/_payment.scss");
+
+// Boarding page
+@import url("./page/boarding/_boardingBanner.scss");
+@import url("./page/boarding/_information.scss");
+@import url("./page/boarding/_companyDetails.scss");
+
+// Join page
+@import url("./page//join/_joinBanner.scss");
+@import url("./page//join/_personalInfo.scss");
+
+// Thank you page
+@import url("./page/thankyou/_thankyou.scss");
+
+// Privacy policy page
+@import url("./page/privacyPolicy/_privacy.scss");
+
+//  Terms and Conditions page
+@import url("./page/termsConditions/_terms.scss");
+
+// Audit page
+
+@import url("./page/auditPage/_audit.scss");
+
+//  Blog
+
+@import url("./page/blogCards/_blogs.scss");
+
+// Blog Pages
+@import url("./page/blogPages/_page1.scss");
+
+// Blog Banner
+@import url("./page/blogBanner/_blogBanner.scss");

@@ -1,0 +1,205 @@
+.army {
+  padding: 74px;
+  padding-top: 0;
+  h2 {
+    width: 951px;
+    color: var(--main, #00cdac);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 50px; /* 96.154% */
+  }
+  .content {
+    gap: 36px;
+    margin-top: 139px;
+    position: relative;
+    z-index: 3;
+    .card {
+      padding: 70px 37px;
+      width: 410px;
+      gap: 47px;
+      //   height: 426px;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+      position: relative;
+      z-index: 5;
+      overflow: hidden;
+      transition: transform 0.4s linear;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 167.401px;
+        height: 167.401px;
+        background: #00cdac;
+        border-radius: 90px;
+        top: -30%;
+        right: 30%;
+        transition: all 0.4s linear;
+        z-index: 2;
+      }
+      &:hover {
+        transform: translateY(-100px);
+        transition: transform 0.4s linear;
+        &::before {
+          width: 100%;
+          height: 100%;
+          transition: all 0.4s linear;
+          right: 0;
+          top: 0;
+          border-radius: 0;
+        }
+        h4 {
+          z-index: 3;
+          color: #fff;
+          transition: all 0.4s linear;
+        }
+        color: #fff;
+        p {
+          z-index: 3;
+          transition: all 0.4s linear;
+        }
+      }
+      h4 {
+        height: 66px;
+        color: #2d2d31;
+        font-family: Roboto;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -0.28px;
+        text-align: center;
+        transition: all 0.4s linear;
+      }
+      p {
+        width: 336px;
+        color: #888;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.2px;
+        transition: all 0.4s linear;
+      }
+    }
+  }
+  .bottom {
+    margin-top: 55px;
+    width: 1302px;
+    height: 215px;
+    padding: 24px;
+    border-radius: 20px;
+    background: linear-gradient(
+      180deg,
+      #00cdac 39.93%,
+      rgba(0, 205, 172, 0.69) 100%
+    );
+    h3 {
+      width: 1006px;
+      flex-shrink: 0;
+      color: #fff;
+      font-family: Roboto;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 120%; /* 48px */
+      letter-spacing: 0.5px;
+      text-transform: capitalize;
+    }
+    button {
+      width: 187px;
+      height: 46px;
+      border-radius: 4px;
+      background: #fff;
+      box-shadow: 0px 6px 42px 0px rgba(0, 205, 172, 0.4);
+      color: #00cdac;
+      font-family: "Roboto";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px; /* 100% */
+    }
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .army {
+    padding: 50px;
+    h2 {
+      font-size: 40px;
+    }
+    .content {
+      margin-top: 80px;
+      gap: 20px;
+      .card {
+        width: 300px;
+        padding: 70px 20px;
+        &:hover {
+          transform: unset;
+        }
+        &::before {
+          right: 20%;
+        }
+        h4 {
+          font-size: 25px;
+          height: 60px;
+        }
+        p {
+          width: 100%;
+          font-size: 16px;
+        }
+      }
+    }
+    .bottom {
+      width: 100%;
+      flex-direction: column;
+      h3 {
+        width: 100%;
+        font-size: 30px;
+      }
+      button {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .army {
+    padding: 50px 20px;
+    padding-top: 0;
+    h2 {
+      font-size: 30px;
+      width: 100%;
+      line-height: 40px;
+    }
+    .content {
+      margin-top: 50px;
+      flex-direction: column;
+      .card {
+        width: 100%;
+        padding: 100px 20px;
+        padding-bottom: 50px;
+        gap: 20px;
+        &::before {
+          right: 25%;
+          border-radius: 100px;
+        }
+      }
+    }
+    .bottom {
+      h3 {
+        font-size: 20px;
+        text-align: center;
+      }
+      button {
+        width: 100%;
+      }
+    }
+  }
+}

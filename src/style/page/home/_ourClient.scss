@@ -1,0 +1,220 @@
+.ourClient {
+  padding: 131px 0px 195px 31px;
+  background: #fff;
+  background-image: url("../../../assets/images/home/Group\ 59.webp");
+  object-fit: cover;
+  h2 {
+    text-align: center;
+    span {
+      background: #000;
+      color: #fff;
+      padding-left: 131px;
+      padding-right: 20px;
+      padding-top: 26px;
+      padding-bottom: 26px;
+      font-weight: 800;
+    }
+  }
+
+  .clientReview-slider {
+    margin-top: 95px;
+    position: relative;
+    .slick-slider {
+      .slick-arrow {
+        background: transparent;
+        border: 1px solid transparent;
+        border-radius: 18px;
+      }
+      .slick-prev {
+        top: 110%;
+        left: 90%;
+        &::before {
+          content: url(../../../assets/icons/arrow-left.svg);
+          opacity: 1 !important;
+        }
+      }
+      .slick-next {
+        right: 5%;
+        top: 110%;
+        &::before {
+          content: url(../../../assets/icons/right.png);
+          opacity: 1 !important;
+        }
+      }
+    }
+
+    .for-layer {
+      max-width: 690px;
+      border: 2.048px solid #cbcbcb;
+      background: #fff;
+      padding: 30px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      .slide-1 {
+        position: relative;
+        z-index: 2;
+        .top {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 10px;
+          position: relative;
+          z-index: 4;
+          img {
+            position: relative;
+            z-index: 2;
+            transition: all 0.4s linear;
+          }
+          &::after {
+            content: " ";
+            position: absolute;
+            width: 62px;
+            height: 62px;
+            border: 2px solid #00cdac;
+            left: 7px;
+            border-radius: 35px;
+            transition: all 0.4s linear;
+          }
+        }
+        .bottom {
+          display: flex;
+          align-items: end;
+          flex-direction: column;
+          .designation {
+            font-size: 15px;
+          }
+        }
+        p {
+          transition: all 0.5s linear;
+          text-align: justify;
+          color: #4d4d4d;
+        }
+      }
+
+      .layer {
+        transition: all 0.5s linear;
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        right: -8%;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #00cdac;
+        border-radius: 50%;
+        opacity: 0;
+        z-index: 1;
+      }
+      &:hover {
+        .layer {
+          opacity: 1;
+          transform: scale(9);
+        }
+        .slide-1 {
+          .top {
+            &::after {
+              border: 2px solid #fff;
+              transition: all 0.4s linear;
+            }
+            .commas {
+              filter: brightness(0.6);
+            }
+          }
+          p {
+            color: #fff;
+          }
+        }
+
+        .hover-hide {
+          display: none;
+        }
+        .hover-show {
+          display: block !important;
+        }
+      }
+    }
+    // .slick.list {
+    //   .slick-track {
+    //     .slick-slide {
+    //       width: 690px;
+    //       margin-right: 50px;
+    //       background: red;
+    //     }
+    //   }
+    // }
+  }
+}
+
+@media screen and (max-width: 1780px) {
+  .ourClient {
+    .clientReview-slider {
+      .for-layer {
+        max-width: 600px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .ourClient {
+    padding: 90px 0px 100px 31px;
+    .clientReview-slider {
+      .slick-track {
+        gap: 40px;
+        display: flex;
+      }
+      .slick-slide {
+        display: flex !important;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .ourClient {
+    h2 span {
+      background: #000;
+      color: #fff;
+      padding-left: 70px;
+      padding-right: 20px;
+    }
+    .clientReview-slider {
+      .slick-slider {
+        .slick-prev {
+          left: 88%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .ourClient {
+    padding: 50px 20px;
+    h2 {
+      span {
+        padding: 0 30px;
+      }
+    }
+    .clientReview-slider {
+      margin-top: 30px;
+      .slick-track {
+        gap: 10px;
+      }
+      .for-layer {
+        padding: 20px;
+      }
+      .slick-slider {
+        .slick-next {
+          right: 40%;
+          top: 105%;
+        }
+        .slick-prev {
+          left: 30%;
+          top: 105%;
+        }
+      }
+    }
+  }
+}

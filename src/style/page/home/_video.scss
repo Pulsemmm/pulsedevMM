@@ -1,0 +1,247 @@
+.video {
+  padding-top: 50px;
+  padding-bottom: 140px;
+  position: relative;
+  .top {
+    padding-top: 80px;
+    position: relative;
+    z-index: 2;
+    .years {
+      color: #fff;
+      background: #00cdac;
+      width: 323px;
+      height: 166px;
+      border-radius: 13px;
+      box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.25);
+      position: absolute;
+      top: 0;
+      right: 12%;
+      z-index: 4;
+    }
+    .client-video {
+      // transform: scale(1);
+      transition: all 0.5s linear;
+      border-radius: 24px;
+      position: relative;
+      max-width: 1250px;
+      border-radius: 16px;
+      img {
+        transition: all 0.4s linear;
+      }
+      video {
+        border-radius: 16px;
+        width: 100%;
+        transition: all 0.4s linear;
+        height: 100%;
+      }
+      .animation {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%);
+        z-index: 6;
+        border-radius: 100%;
+        width: 180px;
+        height: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .inner {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+          position: relative;
+          z-index: 10;
+          border-radius: 100%;
+          box-shadow: 0px 0px 19.269px #00cdac;
+        }
+        .outer {
+          position: absolute;
+          top: -46px;
+          left: -43px;
+          right: 50%;
+          width: 270px;
+          height: 270px;
+          object-fit: cover;
+          z-index: 10;
+          animation: rotateImage 5s infinite linear;
+        }
+        @keyframes rotateImage {
+          0% {
+            transform: rotate(0deg);
+          }
+          20% {
+            transform: rotate(72deg);
+          }
+          40% {
+            transform: rotate(144deg);
+          }
+          60% {
+            transform: rotate(216deg);
+          }
+          80% {
+            transform: rotate(288deg);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+      }
+
+      &:hover {
+        transition: all 0.4s linear;
+        .mainImage {
+          box-shadow: 0px 0px 25px 0px #00cdac;
+          transition: all 0.4s linear;
+          border-radius: 24px;
+          // transform: scale(1.1);
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+  .bottom {
+    position: absolute;
+    bottom: -80px;
+    z-index: 1;
+    width: 100%;
+    padding: 200px 50px 30px 50px;
+    gap: 75px;
+    background: #000;
+    color: #fff;
+    .content {
+      h2 {
+        // font-size: 3vw;
+      }
+      h3 {
+        font-size: 3vw;
+      }
+    }
+    .projects {
+      // padding-bottom: 10px;
+      h6 {
+        font-size: 2.5vw;
+      }
+    }
+  }
+}
+
+// Modal
+.video-header {
+  border-bottom: 0;
+}
+.modal-video {
+  padding: 0;
+  video {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.video-modal {
+  .modal-content {
+    background: none !important;
+    border: none;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .video {
+    .bottom {
+      .content {
+        h2 {
+          font-size: 70px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1450px) {
+  .video {
+    margin-top: 20px !important;
+    .top {
+      .years {
+        width: 250px;
+        height: 130px;
+        top: 40px;
+      }
+      .client-video {
+        transform: scale(0.9);
+      }
+    }
+    .bottom {
+      bottom: 10px;
+      .content {
+        h2 {
+          font-size: 2.5vw;
+        }
+        h3 {
+          font-size: 2.5vw;
+        }
+      }
+      .projects {
+        padding-bottom: 0;
+        h6 {
+          font-size: 2vw;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .video {
+    padding-top: 0;
+    .top {
+      padding-top: 40px;
+      .years {
+        top: 2%;
+        width: 150px;
+        height: 60px;
+        left: 7%;
+        h2 {
+          font-size: 30px;
+        }
+        p {
+          font-size: 15px;
+        }
+      }
+      .client-video {
+        .animation {
+          width: 60px;
+          height: 60px;
+          .outer {
+            width: 150px;
+            height: 150px;
+            display: none;
+          }
+        }
+        &:hover {
+          .mainImage {
+            transform: scale(1);
+          }
+        }
+      }
+    }
+    .bottom {
+      padding: 100px 20px 30px 20px;
+      gap: 30px;
+      bottom: 0;
+      .content {
+        align-items: unset;
+        h2 {
+          font-size: 30px !important;
+        }
+        h3 {
+          font-size: 20px !important;
+        }
+      }
+      .projects {
+        h6 {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

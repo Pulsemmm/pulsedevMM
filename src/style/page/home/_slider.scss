@@ -1,0 +1,112 @@
+.team-slider {
+  background: #fff;
+  padding: 130px 147px;
+  .swiper {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 80px;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 6px solid #f4f4f4;
+    border-radius: 16px;
+    transition: all 0.4s linear;
+
+    &:hover {
+      border: 6px solid #000;
+      border-radius: 16px;
+      transition: all 0.4s linear;
+    }
+  }
+  .swiper-button-prev {
+    top: 98%;
+    left: unset !important;
+    right: 100px;
+    color: #000;
+    &::after {
+      content: "PREV" !important;
+      color: #000;
+      font-family: "Roboto";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+  .swiper-button-next {
+    top: 98%;
+    right: 0% !important;
+    color: #000;
+
+    &::after {
+      content: "NEXT" !important;
+      color: #000;
+      font-family: "Roboto";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+  }
+  .swiper-scrollbar {
+    top: 98%;
+    background: black;
+    height: 1px;
+    width: calc(100% - 2 * var(--swiper-scrollbar-sides-offset, 10%));
+  }
+
+  .swiper-scrollbar-drag {
+    width: 20px !important;
+    height: 20px;
+    border: 4px solid #00cdac;
+    background: black;
+    top: -10px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .team-slider {
+    padding: 94px 144px;
+  }
+
+  .swiper-slide img:hover {
+    // border: 3px solid #000 !important;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .team-slider {
+    padding: 60px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .team-slider {
+    padding: 50px 20px;
+    .swiper-slide {
+      gap: 10px;
+    }
+    .swiper-button-prev {
+      top: 100%;
+    }
+    .swiper-button-next {
+      top: 100%;
+    }
+    .swiper-scrollbar {
+      top: 90%;
+      width: calc(100% - 2 * var(--swiper-scrollbar-sides-offset, 0%));
+    }
+  }
+}
